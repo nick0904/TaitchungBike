@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D11EBCE81CD751090032E5B1 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EBCE71CD751090032E5B1 /* HomePageViewController.swift */; };
+		D11EBCEA1CD7BBD30032E5B1 /* SpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EBCE91CD7BBD30032E5B1 /* SpotViewController.swift */; };
+		D11EBCEC1CD7BC1E0032E5B1 /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EBCEB1CD7BC1E0032E5B1 /* EquipmentViewController.swift */; };
+		D11EBCEE1CD7BC460032E5B1 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EBCED1CD7BC460032E5B1 /* RatesViewController.swift */; };
+		D11EBCF01CD7BC6F0032E5B1 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EBCEF1CD7BC6F0032E5B1 /* RentViewController.swift */; };
+		D1CA411F1CD45885008EB7AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA411E1CD45885008EB7AB /* AppDelegate.swift */; };
+		D1CA41211CD45885008EB7AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA41201CD45885008EB7AB /* ViewController.swift */; };
+		D1CA41261CD45885008EB7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CA41251CD45885008EB7AB /* Assets.xcassets */; };
+		D1CA41291CD45885008EB7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CA41271CD45885008EB7AB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D11EBCE71CD751090032E5B1 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		D11EBCE91CD7BBD30032E5B1 /* SpotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotViewController.swift; sourceTree = "<group>"; };
+		D11EBCEB1CD7BC1E0032E5B1 /* EquipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentViewController.swift; sourceTree = "<group>"; };
+		D11EBCED1CD7BC460032E5B1 /* RatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
+		D11EBCEF1CD7BC6F0032E5B1 /* RentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
+		D1CA411B1CD45885008EB7AB /* Taitchung_iBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taitchung_iBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1CA411E1CD45885008EB7AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1CA41201CD45885008EB7AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1CA41251CD45885008EB7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1CA41281CD45885008EB7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1CA412A1CD45885008EB7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1CA41181CD45885008EB7AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1CA41121CD45885008EB7AB = {
+			isa = PBXGroup;
+			children = (
+				D1CA411D1CD45885008EB7AB /* Taitchung_iBike */,
+				D1CA411C1CD45885008EB7AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1CA411C1CD45885008EB7AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1CA411B1CD45885008EB7AB /* Taitchung_iBike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1CA411D1CD45885008EB7AB /* Taitchung_iBike */ = {
+			isa = PBXGroup;
+			children = (
+				D1CA411E1CD45885008EB7AB /* AppDelegate.swift */,
+				D1CA41201CD45885008EB7AB /* ViewController.swift */,
+				D11EBCE71CD751090032E5B1 /* HomePageViewController.swift */,
+				D11EBCEB1CD7BC1E0032E5B1 /* EquipmentViewController.swift */,
+				D11EBCED1CD7BC460032E5B1 /* RatesViewController.swift */,
+				D11EBCEF1CD7BC6F0032E5B1 /* RentViewController.swift */,
+				D11EBCE91CD7BBD30032E5B1 /* SpotViewController.swift */,
+				D1CA41251CD45885008EB7AB /* Assets.xcassets */,
+				D1CA41271CD45885008EB7AB /* LaunchScreen.storyboard */,
+				D1CA412A1CD45885008EB7AB /* Info.plist */,
+			);
+			path = Taitchung_iBike;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1CA411A1CD45885008EB7AB /* Taitchung_iBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1CA412D1CD45885008EB7AB /* Build configuration list for PBXNativeTarget "Taitchung_iBike" */;
+			buildPhases = (
+				D1CA41171CD45885008EB7AB /* Sources */,
+				D1CA41181CD45885008EB7AB /* Frameworks */,
+				D1CA41191CD45885008EB7AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taitchung_iBike;
+			productName = Taitchung_iBike;
+			productReference = D1CA411B1CD45885008EB7AB /* Taitchung_iBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1CA41131CD45885008EB7AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TSENG;
+				TargetAttributes = {
+					D1CA411A1CD45885008EB7AB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = D1CA41161CD45885008EB7AB /* Build configuration list for PBXProject "Taitchung_iBike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1CA41121CD45885008EB7AB;
+			productRefGroup = D1CA411C1CD45885008EB7AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1CA411A1CD45885008EB7AB /* Taitchung_iBike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1CA41191CD45885008EB7AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1CA41291CD45885008EB7AB /* LaunchScreen.storyboard in Resources */,
+				D1CA41261CD45885008EB7AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1CA41171CD45885008EB7AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11EBCEA1CD7BBD30032E5B1 /* SpotViewController.swift in Sources */,
+				D11EBCF01CD7BC6F0032E5B1 /* RentViewController.swift in Sources */,
+				D1CA41211CD45885008EB7AB /* ViewController.swift in Sources */,
+				D1CA411F1CD45885008EB7AB /* AppDelegate.swift in Sources */,
+				D11EBCE81CD751090032E5B1 /* HomePageViewController.swift in Sources */,
+				D11EBCEE1CD7BC460032E5B1 /* RatesViewController.swift in Sources */,
+				D11EBCEC1CD7BC1E0032E5B1 /* EquipmentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1CA41271CD45885008EB7AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1CA41281CD45885008EB7AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1CA412B1CD45885008EB7AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1CA412C1CD45885008EB7AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1CA412E1CD45885008EB7AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Taitchung_iBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Taitchung-iBike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1CA412F1CD45885008EB7AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Taitchung_iBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Taitchung-iBike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1CA41161CD45885008EB7AB /* Build configuration list for PBXProject "Taitchung_iBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1CA412B1CD45885008EB7AB /* Debug */,
+				D1CA412C1CD45885008EB7AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1CA412D1CD45885008EB7AB /* Build configuration list for PBXNativeTarget "Taitchung_iBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1CA412E1CD45885008EB7AB /* Debug */,
+				D1CA412F1CD45885008EB7AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1CA41131CD45885008EB7AB /* Project object */;
+}
