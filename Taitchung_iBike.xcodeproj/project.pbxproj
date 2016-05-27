@@ -12,6 +12,11 @@
 		D11EBCEC1CD7BC1E0032E5B1 /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EBCEB1CD7BC1E0032E5B1 /* EquipmentViewController.swift */; };
 		D11EBCEE1CD7BC460032E5B1 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EBCED1CD7BC460032E5B1 /* RatesViewController.swift */; };
 		D11EBCF01CD7BC6F0032E5B1 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EBCEF1CD7BC6F0032E5B1 /* RentViewController.swift */; };
+		D13C9C901CED523100DAA877 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C9C8F1CED523100DAA877 /* SpotTableViewCell.swift */; };
+		D13C9C931CED6F3F00DAA877 /* BikeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C9C921CED6F3F00DAA877 /* BikeData.swift */; };
+		D13C9C951CED935100DAA877 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C9C941CED935100DAA877 /* DetailViewController.swift */; };
+		D13C9C971CEDF4B300DAA877 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13C9C961CEDF4B300DAA877 /* MapKit.framework */; };
+		D13C9C991CEDF4BC00DAA877 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13C9C981CEDF4BC00DAA877 /* CoreLocation.framework */; };
 		D1CA411F1CD45885008EB7AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA411E1CD45885008EB7AB /* AppDelegate.swift */; };
 		D1CA41211CD45885008EB7AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA41201CD45885008EB7AB /* ViewController.swift */; };
 		D1CA41261CD45885008EB7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CA41251CD45885008EB7AB /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 		D11EBCEB1CD7BC1E0032E5B1 /* EquipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentViewController.swift; sourceTree = "<group>"; };
 		D11EBCED1CD7BC460032E5B1 /* RatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		D11EBCEF1CD7BC6F0032E5B1 /* RentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
+		D13C9C8F1CED523100DAA877 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
+		D13C9C921CED6F3F00DAA877 /* BikeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeData.swift; sourceTree = "<group>"; };
+		D13C9C941CED935100DAA877 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D13C9C961CEDF4B300DAA877 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D13C9C981CEDF4BC00DAA877 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D1CA411B1CD45885008EB7AB /* Taitchung_iBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taitchung_iBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CA411E1CD45885008EB7AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1CA41201CD45885008EB7AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,15 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13C9C991CEDF4BC00DAA877 /* CoreLocation.framework in Frameworks */,
+				D13C9C971CEDF4B300DAA877 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D13C9C911CED6E0200DAA877 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				D11EBCE91CD7BBD30032E5B1 /* SpotViewController.swift */,
+				D13C9C8F1CED523100DAA877 /* SpotTableViewCell.swift */,
+				D13C9C941CED935100DAA877 /* DetailViewController.swift */,
+				D13C9C921CED6F3F00DAA877 /* BikeData.swift */,
+			);
+			name = Station;
+			sourceTree = "<group>";
+		};
 		D1CA41121CD45885008EB7AB = {
 			isa = PBXGroup;
 			children = (
+				D13C9C981CEDF4BC00DAA877 /* CoreLocation.framework */,
+				D13C9C961CEDF4B300DAA877 /* MapKit.framework */,
 				D1CA411D1CD45885008EB7AB /* Taitchung_iBike */,
 				D1CA411C1CD45885008EB7AB /* Products */,
 			);
@@ -68,7 +93,7 @@
 				D11EBCEB1CD7BC1E0032E5B1 /* EquipmentViewController.swift */,
 				D11EBCED1CD7BC460032E5B1 /* RatesViewController.swift */,
 				D11EBCEF1CD7BC6F0032E5B1 /* RentViewController.swift */,
-				D11EBCE91CD7BBD30032E5B1 /* SpotViewController.swift */,
+				D13C9C911CED6E0200DAA877 /* Station */,
 				D1CA41251CD45885008EB7AB /* Assets.xcassets */,
 				D1CA41271CD45885008EB7AB /* LaunchScreen.storyboard */,
 				D1CA412A1CD45885008EB7AB /* Info.plist */,
@@ -149,8 +174,11 @@
 				D11EBCEA1CD7BBD30032E5B1 /* SpotViewController.swift in Sources */,
 				D11EBCF01CD7BC6F0032E5B1 /* RentViewController.swift in Sources */,
 				D1CA41211CD45885008EB7AB /* ViewController.swift in Sources */,
+				D13C9C931CED6F3F00DAA877 /* BikeData.swift in Sources */,
+				D13C9C901CED523100DAA877 /* SpotTableViewCell.swift in Sources */,
 				D1CA411F1CD45885008EB7AB /* AppDelegate.swift in Sources */,
 				D11EBCE81CD751090032E5B1 /* HomePageViewController.swift in Sources */,
+				D13C9C951CED935100DAA877 /* DetailViewController.swift in Sources */,
 				D11EBCEE1CD7BC460032E5B1 /* RatesViewController.swift in Sources */,
 				D11EBCEC1CD7BC1E0032E5B1 /* EquipmentViewController.swift in Sources */,
 			);
@@ -263,6 +291,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Taitchung-iBike";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,6 +303,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Taitchung-iBike";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Taitchung_iBike
-//
-//  Created by 曾偉亮 on 2016/4/30.
-//  Copyright © 2016年 TSENG. All rights reserved.
-//
+
 
 import UIKit
 

@@ -50,10 +50,11 @@ class EquipmentViewController: UIViewController {
         
             //*************  title_label   *************
             let title_label = UILabel(frame: CGRect(x: imagView_width * CGFloat(index), y: imgView.frame.size.height - spaceH, width: imagView_width, height: (m_scrollView!.frame.size.height - imgView.frame.size.height)/2))
-            title_label.backgroundColor = UIColor.cyanColor()
+            title_label.backgroundColor = UIColor.orangeColor()
             title_label.textAlignment = .Center
             title_label.font = UIFont.boldSystemFontOfSize(title_label.frame.size.height/3)
             title_label.adjustsFontSizeToFitWidth = true
+            title_label.textColor = UIColor.whiteColor()
             m_scrollView?.addSubview(title_label)
             self.ary_titleLabels.append(title_label)
             
@@ -70,16 +71,16 @@ class EquipmentViewController: UIViewController {
         ary_titleLabels[0].text = "全車外觀"
         ary_descriptionLabels[0].text = "鮮明的橘黃色搭配、舒適輕巧好操控"
         
-        ary_titleLabels[1].text = "變速"
+        ary_titleLabels[1].text = "變速系統"
         ary_descriptionLabels[1].text = "內變三段變速系統、簡單實用"
         
-        ary_titleLabels[2].text = "車鎖"
+        ary_titleLabels[2].text = "隨車配鎖"
         ary_descriptionLabels[2].text = "兩用車鎖，車柱鎖與臨停鎖"
         
-        ary_titleLabels[3].text = "前燈"
+        ary_titleLabels[3].text = "前車燈"
         ary_descriptionLabels[3].text = "前輪驅動發亮LED頭燈、讓您行得安全"
         
-        ary_titleLabels[4].text = "後燈"
+        ary_titleLabels[4].text = "後車燈"
         ary_descriptionLabels[4].text = "一體式嵌入、中途停靠可維持不滅60~90秒"
         
         ary_titleLabels[5].text = "座墊"

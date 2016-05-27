@@ -5,6 +5,7 @@ import UIKit
 class HomePageViewController: UIViewController {
     
     var ary_bt = [UIButton]()
+    var connectionBt:UIButton!
     
     //其它頁面
     var equipmentVC:EquipmentViewController?
@@ -36,7 +37,7 @@ class HomePageViewController: UIViewController {
         
         let bt_size = frame.size.width/2.5 //設定 bt 大小
         let btOriginX = (frame.size.width - 2*bt_size)/2
-        let btOringinY = (frame.size.height - 2*bt_size)/2
+        let btOringinY = (frame.size.height - 2*bt_size)/3
         
         for row in 0 ... 1 {
             
@@ -72,21 +73,26 @@ class HomePageViewController: UIViewController {
         ary_bt[3].setTitle("據點查詢", forState: .Normal)
         ary_bt[3].backgroundColor = UIColor.redColor()
         
+        //*************  官網連結  *************
+        let connectionBtWidth = frame.size.width * 0.8
+        connectionBt = UIButton(frame: CGRect(x: frame.size.width/2 - connectionBtWidth/2, y: frame.size.height - 1.5*(connectionBtWidth/3), width:connectionBtWidth, height:connectionBtWidth/3))
+        connectionBt.setBackgroundImage(UIImage(named: "connectBt.png"), forState: .Normal)
+        connectionBt.addTarget(self, action: #selector(HomePageViewController.onConnectionBtAction(_:)), forControlEvents: .TouchUpInside)
+        self.view.addSubview(connectionBt)
+        
     }
     
 //MARK:- onBtAction
 //-----------------
     func onBtAction(sender:UIButton) {
-        
+         
         self.animationWhenTouch(sender)
-        self.performSelector(#selector(HomePageViewController.pushOtherViewcontroller(_:)), withObject: sender, afterDelay: 1.0)
+        self.performSelector(#selector(HomePageViewController.pushOtherViewcontroller(_:)), withObject: sender, afterDelay: 0.38)
     }
     
 //MARK: - pushOtherViewcontroller
 //-------------------------------
     func pushOtherViewcontroller(sender:UIButton) {
-        
-        var vc:UIViewController!
         
         switch sender {
         case ary_bt[0]:
@@ -96,7 +102,8 @@ class HomePageViewController: UIViewController {
                 equipmentVC?.refreshWithFrame(self.view.frame)
                 equipmentVC?.title = "設備介紹"
             }
-            vc = equipmentVC!
+            self.navigationController?.pushViewController(equipmentVC!, animated: true)
+            
         case ary_bt[1]:
             if ratesVC == nil {
                 
@@ -104,7 +111,7 @@ class HomePageViewController: UIViewController {
                 ratesVC?.refreshWithFrame(self.view.frame)
                 ratesVC?.title = "費率說明"
             }
-            vc = ratesVC!
+            self.navigationController?.pushViewController(ratesVC!, animated: true)
         case ary_bt[2]:
             if rentVC == nil {
                 
@@ -112,35 +119,41 @@ class HomePageViewController: UIViewController {
                 rentVC?.refreshWithFrame(self.view.frame)
                 rentVC?.title = "租借說明"
             }
-            vc = rentVC!
+             self.navigationController?.pushViewController(rentVC!, animated: true)
         case ary_bt[3]:
             if spotVC == nil {
                 
                 spotVC = SpotViewController()
                 spotVC?.refreshWithFrame(self.view.frame)
                 spotVC?.title = "據點查詢"
+                spotVC?.navH = self.navigationController!.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.height
             }
-            vc = spotVC!
+            self.navigationController?.pushViewController(spotVC!, animated: true)
         default:
             return
         }
+
         
-        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+//MARK: - onConnectionBtAction
+//----------------------------
+    func onConnectionBtAction(sender:UIButton) {
         
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://i.youbike.com.tw/cht/index.php")!)
     }
     
 //MARK: - animationWhenTouch
 //--------------------------
     func animationWhenTouch(sender:UIButton) {
         
-        UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+        UIView.animateWithDuration(0.36, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
             
             sender.transform = CGAffineTransformMakeScale(2.5, 2.5)
-            
+
             }, completion: nil)
         
     }
-    
     
 
 }//end class
